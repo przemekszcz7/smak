@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  
+  --color-brand-primary: #8B4513; /* SaddleBrown */
+  --color-brand-accent: #DAA520;  /* GoldenRod */
+  --color-brand-bg: #FFFBF5;     /* Even softer cream */
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-gray-900 selection:bg-brand-accent selection:text-white;
+    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  }
+}
+
+.blob-shadow {
+  filter: blur(80px);
+  opacity: 0.15;
+}
